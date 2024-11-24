@@ -1,0 +1,14 @@
+{
+    "users": 
+        [
+            {
+                "identifier" : "finnstark",
+                "password" : "wsxdcf"
+            },
+            {
+                "identifier" : "billy",
+                "password" : "wxcvbn"
+            }
+        ]
+    
+}
