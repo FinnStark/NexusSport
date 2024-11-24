@@ -1,3 +1,14 @@
+# Nexus Sport
+
+#### Les couleurs : 
+#FFFFFF
+Principale [ Rich Black ] : 00171F
+ [ Prussian blue ] : 003459
+ [ Picton blue ] : 00A7E1
+ [ Cerulean ] : 007EA7
+ [ Sky blue ] : 81C3D7
+ 
+
 # Welcome to your Expo app 👋
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
