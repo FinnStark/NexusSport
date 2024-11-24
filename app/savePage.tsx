@@ -7,18 +7,15 @@ import Input from "@/components/ui/input";
 import PasswordInput from "@/components/ui/passwordInput";
 import { useTranslation } from "react-i18next";
 import MyButton from "@/components/ui/button";
-import { useRouter } from "expo-router";
 
 export default function Index() {
   const { t, i18n } = useTranslation();
   const [loading, setLoading] = useState(true);
   const [nbLoginAtempt, setNbLoginAtempt] = useState(0);
-  const router = useRouter();
 
   const handleLoginPress = () => {
     console.log("je me log : " + nbLoginAtempt);
     setNbLoginAtempt(nbLoginAtempt + 1);
-    router.push("/homePage");
   };
 
   const handleForgotPasswordPress = () => {
