@@ -1,5 +1,8 @@
 {
+    "ForgottenPassword": "Forgot Password ?",
     "login": "Login",
+    "motto": "Share, surpass yourself & triumph",
     "password": "Password",
-    "signIn": "Sign in"
+    "signIn": "Sign in",
+    "welcome" : "Welcome on Nexus Sport"
 }

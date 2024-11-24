@@ -5,7 +5,7 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "@/assets/images/nexus-sport-logo.png",
-    "scheme": "myapp",
+    "scheme": "nexussport",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {

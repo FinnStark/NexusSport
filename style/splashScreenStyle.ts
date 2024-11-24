@@ -1,6 +1,7 @@
+import { BG_COLOR, COLOR_RICH_BLACK } from '@/utils/constantsStyle';
 import {StyleSheet} from 'react-native';
 export const s = StyleSheet.create({
     splashScreen: {
-        backgroundColor : "#00171F"
+        backgroundColor : BG_COLOR
     }    
 })

@@ -1,11 +1,13 @@
+import { BG_BUTTON_COLOR, BUTTON_RADIUS } from '@/utils/constantsStyle';
 import {StyleSheet} from 'react-native';
 export const buttonStyle = StyleSheet.create({
     signInButton: {
-        backgroundColor : "#007EA7",
+        backgroundColor : BG_BUTTON_COLOR,
         width: 200,
         height: 40,
-        borderRadius: 5,
+        borderRadius: BUTTON_RADIUS,
         margin: 5,
+        marginTop: 15,
         justifyContent: "center",
         alignItems: 'center', // Centre horizontalement
     },
