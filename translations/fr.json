@@ -1,8 +1,10 @@
 {
+    "Back": "Retour",
     "ForgottenPassword": "Mot de passe oublié ?",
-    "login": "Identifiant",
-    "motto": "Partager, se dépasser et triompher",
-    "password": "Mot de passe",
-    "signIn": "Se connecter",
-    "welcome" : "Bienvenue sur Nexus Sport"
+    "Login": "Identifiant",
+    "Motto": "Partager, se dépasser et triompher",
+    "Password": "Mot de passe",
+    "SignIn": "Se connecter",
+    "SignUp": "S'enregistrer",
+    "Welcome" : "Bienvenue sur Nexus Sport"
 }

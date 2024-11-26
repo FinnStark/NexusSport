@@ -1,0 +1,38 @@
+[    
+    {
+        "club": "GDR Padel",
+        "level": "1",
+        "description": "Niveau 1"
+    }, 
+    {
+        "club": "GDR Padel",
+        "level": "2",
+        "description": "Niveau 2"
+    }, 
+    {
+        "club": "GDR Padel",
+        "level": "3",
+        "description": "Niveau 3"
+    }, 
+    {
+        "club": "GDR Padel",
+        "level": "4",
+        "description": "Niveau 4"
+    }, 
+    {
+        "club": "GDR Padel",
+        "level": "5",
+        "description": "Niveau 5"
+    }, 
+    {
+        "club": "GDR Padel",
+        "level": "6",
+        "description": "Niveau 6"
+    }, 
+    {
+        "club": "GDR Padel",
+        "level": "7",
+        "description": "Niveau 7"
+    }
+
+]

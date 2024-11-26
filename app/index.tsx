@@ -1,29 +1,38 @@
 import "@/i18n";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Text, View, Image, TouchableOpacity } from "react-native";
+import { useTranslation } from "react-i18next";
+import { useRouter } from "expo-router";
 import { indexStyles } from "@/style/indexStyle";
 import { commonStyles } from "@/style/commonStyle";
 import Input from "@/components/ui/input";
-import PasswordInput from "@/components/ui/passwordInput";
-import { useTranslation } from "react-i18next";
 import MyButton from "@/components/ui/button";
-import { useRouter } from "expo-router";
+import { signInService } from "@/services/UserService";
 
 export default function Index() {
-  const { t, i18n } = useTranslation();
-  const [loading, setLoading] = useState(true);
+  const { t } = useTranslation();
   const [nbLoginAtempt, setNbLoginAtempt] = useState(0);
+  const [password, setPassword] = useState("");
+  const [incorrectSignIn, setIncorrectSignIn] = useState(false);
+  const [user, setUser] = useState("");
   const router = useRouter();
 
-  const handleLoginPress = () => {
-    console.log("je me log : " + nbLoginAtempt);
-    setNbLoginAtempt(nbLoginAtempt + 1);
-    router.push("/homePage");
+  const handleSignInPress = () => {
+    setIncorrectSignIn(false);
+    if (signInService(user, password)) {
+      /* TODO : Verification de comment se logger, où renvoyer etc, des cookies? utiliser des tokens pour securiser la co */
+      router.push("/home");
+    } else {
+      /* message erreur */
+      setNbLoginAtempt(nbLoginAtempt + 1);
+      setIncorrectSignIn(true);
+    }
   };
 
   const handleForgotPasswordPress = () => {
     console.log("j'ai zappé mon mdp : " + nbLoginAtempt);
     setNbLoginAtempt(nbLoginAtempt + 1);
+    setIncorrectSignIn(false);
   };
 
   const handleSignUpPress = () => {
@@ -37,10 +46,25 @@ export default function Index() {
         style={commonStyles.logo}
         source={require("@/assets/images/nexus-sport-logo.png")}
       />
-      <Text style={commonStyles.paragraph}>{t("welcome")}</Text>
-      <Input placeholder={t("login")} />
-      <PasswordInput placeholder={t("password")} />
-      <MyButton title={t("signIn")} onPress={handleLoginPress} />
+      <Text style={commonStyles.paragraph}>{t("Welcome")}</Text>
+      {/* TODO : gérer le fait que le message ne décale pas les Mise en forme. */}
+
+      <Text style={commonStyles.paragraphError}>
+        {/* TODO i18n */}
+        {incorrectSignIn && "Identifiant ou mot de passe incorrect."}
+      </Text>
+
+      <Input
+        _placeholder={t("Login")}
+        _onChangeValue={setUser}
+        _secureTextEntry={false}
+      />
+      <Input
+        _placeholder={t("Password")}
+        _onChangeValue={setPassword}
+        _secureTextEntry={true}
+      />
+      <MyButton title={t("SignIn")} onPress={handleSignInPress} />
       <View style={{ flexDirection: "row" }}>
         <TouchableOpacity onPress={handleForgotPasswordPress}>
           <Text style={commonStyles.paragraph}>{t("ForgottenPassword")}</Text>

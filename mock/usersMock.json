@@ -1,0 +1,22 @@
+[
+    {
+        "identifier" : "finnstark",
+        "password" : "wsxdcf"
+    },
+    {
+        "identifier" : "billy",
+        "password" : "wxcvbn"
+    },
+    {
+        "identifier" : "admin",
+        "password" : "admin"
+    },
+    {
+        "identifier" : "A",
+        "password" : "A"
+    },
+    {
+        "identifier" : "",
+        "password" : ""
+    }
+]

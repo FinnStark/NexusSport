@@ -6,6 +6,10 @@ export const commonStyles = StyleSheet.create({
         color: "#FFFFFF",
         padding: 5
     },
+    paragraphError: {
+        color: "#F00",
+        padding: 5
+    },
     link: {
         color: LINK_COLOR,
         padding: 5
