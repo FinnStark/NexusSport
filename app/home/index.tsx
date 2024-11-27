@@ -5,9 +5,10 @@ import { commonStyles } from "@/style/commonStyle";
 import { useTranslation } from "react-i18next";
 import MyButton from "@/components/ui/button";
 import { useRouter } from "expo-router";
+import PlayerFinderList from "@/components/PlayerFinderList";
 
 export default function Index() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const router = useRouter();
 
   const handleLoginPress = () => {
@@ -16,14 +17,27 @@ export default function Index() {
 
   return (
     <View style={indexStyles.index}>
-      <Text style={commonStyles.paragraph}>
-        This is the home page! Il va se passer pleinde choses ici. {"\n\n"}{" "}
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam unde
-        quas iste temporibus, aspernatur earum labore natus voluptate
-        perferendis vel ratione itaque autem similique, ut obcaecati in neque
-        magnam possimus.
-      </Text>
-      <MyButton title={t("Back")} onPress={handleLoginPress} />
+      <View
+        style={{
+          width: "100%",
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "space-around",
+        }}
+      >
+        <Image
+          style={{ width: 30, height: 30 }}
+          source={require("@/assets/images/burger-menu-icon.png")}
+          tintColor="white"
+        />
+        <MyButton title={t("Back")} onPress={handleLoginPress} />
+        <Image
+          style={{ width: 30, height: 30 }}
+          source={require("@/assets/images/filter-icon.png")}
+          tintColor="white"
+        />
+      </View>
+      <PlayerFinderList />
     </View>
   );
 }

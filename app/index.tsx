@@ -47,7 +47,6 @@ export default function Index() {
         source={require("@/assets/images/nexus-sport-logo.png")}
       />
       <Text style={commonStyles.paragraph}>{t("Welcome")}</Text>
-      {/* TODO : gérer le fait que le message ne décale pas les Mise en forme. */}
 
       <Text style={commonStyles.paragraphError}>
         {/* TODO i18n */}

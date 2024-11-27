@@ -1,5 +1,5 @@
 import { Slot } from "expo-router";
-import BottomHomeMenu from "@/components/bottomHomeMenu";
+import BottomHomeMenu from "@/components/BottomHomeMenu";
 import { View } from "react-native";
 
 export default function HomeLayout() {

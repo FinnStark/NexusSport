@@ -1,8 +1,8 @@
-import { COLOR_PRUSSIAN_BLUE } from '@/utils/constantsStyle';
+import { BG_COLOR } from '@/utils/constantsStyle';
 import {StyleSheet} from 'react-native';
 export const bottomHomeMenuStyle = StyleSheet.create({
     bottomHomeMenu: {
-        backgroundColor : COLOR_PRUSSIAN_BLUE,
+        backgroundColor : BG_COLOR,
         width: "100%",
         height: 50, 
         flexDirection: "row",
