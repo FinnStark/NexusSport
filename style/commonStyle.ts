@@ -18,5 +18,8 @@ export const commonStyles = StyleSheet.create({
         width: 200,
         height: 200,
         margin: 20
+    },
+    flexDirectionRow: {
+        flexDirection: "row"
     }
 })

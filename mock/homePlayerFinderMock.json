@@ -10,8 +10,8 @@
         "comment": "7",
         "playersMax": "4",
         "playersRegistered": "2",
-        "datePublied": "2024-11-26",
-        "dateSchedule": "2024-11-30"
+        "datePublied": "2024-11-30 17:15:00",
+        "dateSchedule": "2024-11-30 14:30:00"
     },
     {
         "id": 2,
@@ -24,8 +24,8 @@
         "comment": "5",
         "playersMax": "4",
         "playersRegistered": "2",
-        "datePublied": "2024-11-27",
-        "dateSchedule": "2024-11-29"
+        "datePublied": "2024-11-30 16:52:00",
+        "dateSchedule": "2024-11-29 14:30:00"
     },
     {
         "id": 3,
@@ -38,8 +38,8 @@
         "comment": "12",
         "playersMax": "3",
         "playersRegistered": "1",
-        "datePublied": "2024-11-26",
-        "dateSchedule": "2024-12-02"
+        "datePublied": "2024-11-30 15:52:00",
+        "dateSchedule": "2024-12-02 14:30:00"
     },
     {
         "id": 4,
@@ -52,8 +52,8 @@
         "comment": "3",
         "playersMax": "5",
         "playersRegistered": "4",
-        "datePublied": "2024-11-26",
-        "dateSchedule": "2024-12-02"
+        "datePublied": "2024-11-29 13:52:00",
+        "dateSchedule": "2024-12-02 14:30:00"
     },
     {
         "id": 5,
@@ -66,8 +66,8 @@
         "comment": "2",
         "playersMax": "4",
         "playersRegistered": "1",
-        "datePublied": "2024-11-25",
-        "dateSchedule": "2024-12-01"
+        "datePublied": "2024-11-25 14:30:00",
+        "dateSchedule": "2024-12-01 14:30:00"
     },
     {
         "id": 6,
@@ -80,8 +80,8 @@
         "comment": "8",
         "playersMax": "2",
         "playersRegistered": "1",
-        "datePublied": "2024-11-24",
-        "dateSchedule": "2024-11-30"
+        "datePublied": "2024-11-24 14:30:00",
+        "dateSchedule": "2024-11-30 14:30:00"
     },
     {
         "id": 7,
@@ -94,8 +94,8 @@
         "comment": "5",
         "playersMax": "6",
         "playersRegistered": "4",
-        "datePublied": "2024-11-23",
-        "dateSchedule": "2024-11-29"
+        "datePublied": "2024-11-23 14:30:00",
+        "dateSchedule": "2024-11-29 14:30:00"
     },
     {
         "id": 8,
@@ -108,8 +108,8 @@
         "comment": "0",
         "playersMax": "4",
         "playersRegistered": "3",
-        "datePublied": "2024-11-25",
-        "dateSchedule": "2024-11-28"
+        "datePublied": "2024-11-25 14:30:00",
+        "dateSchedule": "2024-11-28 14:30:00"
     },
     {
         "id": 9,
@@ -122,8 +122,8 @@
         "comment": "1",
         "playersMax": "2",
         "playersRegistered": "1",
-        "datePublied": "2024-11-26",
-        "dateSchedule": "2024-11-27"
+        "datePublied": "2024-11-26 14:30:00",
+        "dateSchedule": "2024-11-27 14:30:00"
     },
     {
         "id": 10,
@@ -136,8 +136,8 @@
         "comment": "6",
         "playersMax": "5",
         "playersRegistered": "2",
-        "datePublied": "2024-11-24",
-        "dateSchedule": "2024-11-30"
+        "datePublied": "2024-11-24 14:30:00",
+        "dateSchedule": "2024-11-30 14:30:00"
     },
     {
         "id": 11,
@@ -150,8 +150,8 @@
         "comment": "3",
         "playersMax": "4",
         "playersRegistered": "2",
-        "datePublied": "2024-11-25",
-        "dateSchedule": "2024-11-28"
+        "datePublied": "2024-11-25 14:30:00",
+        "dateSchedule": "2024-11-28 14:30:00"
     },
     {
         "id": 12,
@@ -164,7 +164,7 @@
         "comment": "9",
         "playersMax": "4",
         "playersRegistered": "2",
-        "datePublied": "2024-11-25",
-        "dateSchedule": "2024-12-02"
+        "datePublied": "2024-11-25 14:30:00",
+        "dateSchedule": "2024-12-02 14:30:00"
     }
 ]

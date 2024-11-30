@@ -1,30 +1,38 @@
 import { PlayerFinder } from "@/models/PlayerFinder";
 import { commonStyles } from "@/style/commonStyle";
 import { COLOR_PRUSSIAN_BLUE, COLOR_WHITE } from "@/utils/constantsStyle";
+import { capitalize, getPostTimeAgo } from "@/utils/functions";
 import { useCallback, useState } from "react";
 import { View, Text, StyleSheet } from "react-native";
 
-interface InputProps {
-  _playerFinder: PlayerFinder;
+interface PlayerSearchItemProps {
+  playerFinder: PlayerFinder;
 }
 
-export default function PlayerSearchItem({ _playerFinder }: InputProps) {
+export default function PlayerSearchItem({
+  playerFinder,
+}: PlayerSearchItemProps) {
   return (
     <View style={styles.itemContainer}>
-      <Text style={styles.title}>{_playerFinder.seeker}</Text>
+      <View style={styles.container}>
+        <Text style={styles.user}>{capitalize(playerFinder.seeker)}</Text>
+        <Text style={styles.date}>
+          {getPostTimeAgo(playerFinder.datePublied.toString())}
+        </Text>
+      </View>
+      <Text style={commonStyles.paragraph}>{playerFinder.description}</Text>
+
+      <View style={styles.container}>
+        <Text style={commonStyles.paragraph}>
+          Date : {playerFinder.dateSchedule.toString()}
+        </Text>
+        <Text style={commonStyles.paragraph}>
+          Commentaires : {playerFinder.comment}
+        </Text>
+      </View>
       <Text style={commonStyles.paragraph}>
-        {_playerFinder.datePublied.toString()}
-      </Text>
-      <Text style={commonStyles.paragraph}>{_playerFinder.description}</Text>
-      <Text style={commonStyles.paragraph}>
-        Commentaires : {_playerFinder.comment}
-      </Text>
-      <Text style={commonStyles.paragraph}>
-        Joueurs inscrits : {_playerFinder.playersRegistered}/
-        {_playerFinder.playersMax}
-      </Text>
-      <Text style={commonStyles.paragraph}>
-        Date : {_playerFinder.dateSchedule.toString()}
+        Joueurs inscrits : {playerFinder.playersRegistered}/
+        {playerFinder.playersMax}
       </Text>
     </View>
   );
@@ -33,13 +41,25 @@ export default function PlayerSearchItem({ _playerFinder }: InputProps) {
 const styles = StyleSheet.create({
   itemContainer: {
     padding: 10,
-    marginVertical: 5,
+    marginVertical: 1,
     backgroundColor: COLOR_PRUSSIAN_BLUE,
-    borderRadius: 8,
   },
   title: {
     fontSize: 16,
     fontWeight: "bold",
     color: COLOR_WHITE,
+  },
+  container: {
+    flexDirection: "row",
+    justifyContent: "space-between", // Espace entre les éléments
+    padding: 5, // Optionnel : espacement interne
+  },
+  user: {
+    fontSize: 16,
+    fontWeight: "bold",
+    color: COLOR_WHITE,
+  },
+  date: {
+    color: "gray",
   },
 });

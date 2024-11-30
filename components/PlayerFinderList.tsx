@@ -1,7 +1,8 @@
 import { getSearchingForPlayerList } from "@/services/HomeService";
 import { useCallback, useState } from "react";
-import { View, Text, RefreshControl, FlatList } from "react-native";
+import { RefreshControl, FlatList } from "react-native";
 import PlayerSearchItem from "./PlayerFinderItem";
+import { COLOR_PRUSSIAN_BLUE_BG } from "@/utils/constantsStyle";
 
 export default function PlayerFinderList() {
   const [refreshing, setRefreshing] = useState(false);
@@ -19,8 +20,12 @@ export default function PlayerFinderList() {
         <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
       }
       data={getSearchingForPlayerList()}
+      style={{
+        width: "96%",
+        backgroundColor: COLOR_PRUSSIAN_BLUE_BG,
+      }}
       keyExtractor={(item) => item.id} // Clé unique pour chaque élément
-      renderItem={({ item }) => <PlayerSearchItem _playerFinder={item} />}
+      renderItem={({ item }) => <PlayerSearchItem playerFinder={item} />}
     />
   );
 }
