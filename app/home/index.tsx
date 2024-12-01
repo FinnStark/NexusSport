@@ -27,13 +27,13 @@ export default function Index() {
       >
         <Image
           style={{ width: 30, height: 30 }}
-          source={require("@/assets/images/burger-menu-icon.png")}
+          source={require("@/assets/icons/Navigation-Menu.png")}
           tintColor="white"
         />
         <MyButton title={t("Back")} onPress={handleLoginPress} />
         <Image
           style={{ width: 30, height: 30 }}
-          source={require("@/assets/images/filter-icon.png")}
+          source={require("@/assets/icons/Filter-Setting-Three-Controller.png")}
           tintColor="white"
         />
       </View>

@@ -1,9 +1,14 @@
 import { PlayerFinder } from "@/models/PlayerFinder";
 import { commonStyles } from "@/style/commonStyle";
 import { COLOR_PRUSSIAN_BLUE, COLOR_WHITE } from "@/utils/constantsStyle";
-import { capitalize, getPostTimeAgo } from "@/utils/functions";
+import {
+  capitalize,
+  getPostTimeAgo,
+  getScheduleDateStr,
+} from "@/utils/functions";
 import { useCallback, useState } from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, Image } from "react-native";
+import JoinGameButton from "@/components/JoinGameButton";
 
 interface PlayerSearchItemProps {
   playerFinder: PlayerFinder;
@@ -12,6 +17,14 @@ interface PlayerSearchItemProps {
 export default function PlayerSearchItem({
   playerFinder,
 }: PlayerSearchItemProps) {
+  const [playersJoined, SetPlayersJoined] = useState(0);
+
+  function handleJoinPress(nb: number) {
+    if (playersJoined + 1 + nb <= playerFinder.playersMax) {
+      SetPlayersJoined(playersJoined + nb);
+    }
+  }
+
   return (
     <View style={styles.itemContainer}>
       <View style={styles.container}>
@@ -23,22 +36,44 @@ export default function PlayerSearchItem({
       <Text style={commonStyles.paragraph}>{playerFinder.description}</Text>
 
       <View style={styles.container}>
-        <Text style={commonStyles.paragraph}>
-          Date : {playerFinder.dateSchedule.toString()}
-        </Text>
-        <Text style={commonStyles.paragraph}>
-          Commentaires : {playerFinder.comment}
-        </Text>
+        <View style={[styles.container, { alignItems: "center" }]}>
+          <Image
+            source={require("@/assets/icons/Calendar.png")}
+            style={styles.icon}
+          />
+          <Text style={commonStyles.paragraph}>
+            {getScheduleDateStr(playerFinder.dateSchedule.toString())}
+          </Text>
+        </View>
+        <View style={[styles.container, { alignItems: "center" }]}>
+          <Image
+            source={require("@/assets/icons/Messages-Bubble-Square.png")}
+            style={styles.icon}
+          />
+          <Text style={commonStyles.paragraph}>{playerFinder.comment}</Text>
+        </View>
       </View>
-      <Text style={commonStyles.paragraph}>
-        Joueurs inscrits : {playerFinder.playersRegistered}/
-        {playerFinder.playersMax}
-      </Text>
+      <View style={[styles.container, { alignItems: "center" }]}>
+        <JoinGameButton
+          nbPlayersJoined={playersJoined}
+          handleJoinPress={handleJoinPress}
+        />
+        <View style={[styles.container, { alignItems: "center" }]}>
+          <Image
+            source={require("@/assets/icons/Multiple-Neutral-2.png")}
+            style={styles.icon}
+          />
+          <Text style={commonStyles.paragraph}>
+            {1 + playersJoined}/{playerFinder.playersMax}
+          </Text>
+        </View>
+      </View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
+  icon: { tintColor: "white", width: 15, height: 15 },
   itemContainer: {
     padding: 10,
     marginVertical: 1,
