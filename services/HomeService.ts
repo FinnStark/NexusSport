@@ -1,4 +1,4 @@
-import { PlayerFinder } from '@/models/PlayerFinder'
+import { PlayerFinder } from '@/types/interfaces/PlayerFinder'
 import homePlayersSearch from '@/mock/homePlayerFinderMock.json'
 
 /* TODO : router les services sur autre chose que du mock. */

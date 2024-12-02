@@ -1,4 +1,4 @@
-import { SportLevel } from "@/models/SportLevel";
+import { SportLevel } from "@/types/interfaces/SportLevel";
 
 export interface PlayerFinder {
     id: string;

@@ -11,11 +11,41 @@
         "playersMax": "4",
         "playersRegistered": "2",
         "duration" : "02:00" ,
+        "datePublied": "2024-12-30 17:15:00",
+        "dateSchedule": "2024-12-30 14:30:00"
+    },
+    {
+        "id": 2,
+        "seeker": "finnstark",
+        "description": "Bonjour, je cherche trois joueurs pour du padel le 30. Niveau 3 et/ou 4.",
+        "acceptedLevels": [
+            { "club": "GDR Padel", "level": "3", "description": "Niveau 3" },
+            { "club": "GDR Padel", "level": "4", "description": "Niveau 4" }
+        ],
+        "comment": "7",
+        "playersMax": "4",
+        "playersRegistered": "4",
+        "duration" : "02:00" ,
+        "datePublied": "2024-12-30 17:15:00",
+        "dateSchedule": "2024-12-30 14:30:00"
+    },
+    {
+        "id": 3,
+        "seeker": "finnstark",
+        "description": "Bonjour, je cherche trois joueurs pour du padel le 30. Niveau 3 et/ou 4.",
+        "acceptedLevels": [
+            { "club": "GDR Padel", "level": "3", "description": "Niveau 3" },
+            { "club": "GDR Padel", "level": "4", "description": "Niveau 4" }
+        ],
+        "comment": "7",
+        "playersMax": "4",
+        "playersRegistered": "2",
+        "duration" : "02:00" ,
         "datePublied": "2024-11-30 17:15:00",
         "dateSchedule": "2024-11-30 14:30:00"
     },
     {
-        "id": 2,
+        "id": 4,
         "seeker": "finnstark",
         "description": "Bonjour, je cherche trois joueurs pour du padel le 30. Niveau 3 et/ou 4.",
         "acceptedLevels": [
@@ -26,11 +56,11 @@
         "playersMax": "4",
         "playersRegistered": "2",
         "duration" : "02:00" ,
-        "datePublied": "2024-11-30 16:52:00",
-        "dateSchedule": "2024-11-29 14:30:00"
+        "datePublied": "2024-12-30 16:52:00",
+        "dateSchedule": "2024-12-29 14:30:00"
     },
     {
-        "id": 3,
+        "id": 5,
         "seeker": "finnstark",
         "description": "Salut, recherche deux joueurs pour du tennis niveau intermédiaire ce week-end.",
         "acceptedLevels": [
@@ -41,11 +71,11 @@
         "playersMax": "3",
         "playersRegistered": "1",
         "duration" : "02:00" ,
-        "datePublied": "2024-11-30 15:52:00",
+        "datePublied": "2024-12-30 15:52:00",
         "dateSchedule": "2024-12-02 14:30:00"
     },
     {
-        "id": 4,
+        "id": 6,
         "seeker": "john_doe",
         "description": "Bonjour, on cherche un joueur pour compléter une équipe de foot à 5 samedi à 18h.",
         "acceptedLevels": [
@@ -56,11 +86,11 @@
         "playersMax": "5",
         "playersRegistered": "4",
         "duration" : "02:00" ,
-        "datePublied": "2024-11-29 13:52:00",
+        "datePublied": "2024-12-29 13:52:00",
         "dateSchedule": "2024-12-02 14:30:00"
     },
     {
-        "id": 5,
+        "id": 7,
         "seeker": "A",
         "description": "Yo, je cherche trois joueurs pour du padel le 1er, 21h30. Niveau 5 et/ou 6.",
         "acceptedLevels": [
@@ -71,11 +101,11 @@
         "playersMax": "4",
         "playersRegistered": "1",
         "duration" : "02:00" ,
-        "datePublied": "2024-11-25 14:30:00",
+        "datePublied": "2024-12-25 14:30:00",
         "dateSchedule": "2024-12-01 14:30:00"
     },
     {
-        "id": 6,
+        "id": 8,
         "seeker": "jane_doe",
         "description": "Recherche un partenaire pour une partie de squash ce jeudi soir. Niveau débutant accepté.",
         "acceptedLevels": [
@@ -86,11 +116,11 @@
         "playersMax": "2",
         "playersRegistered": "1",
         "duration" : "02:00" ,
-        "datePublied": "2024-11-24 14:30:00",
-        "dateSchedule": "2024-11-30 14:30:00"
+        "datePublied": "2024-12-24 14:30:00",
+        "dateSchedule": "2024-12-30 14:30:00"
     },
     {
-        "id": 7,
+        "id": 9,
         "seeker": "mike_b",
         "description": "Besoin de deux joueurs pour du volley en salle, samedi après-midi.",
         "acceptedLevels": [
@@ -101,11 +131,11 @@
         "playersMax": "6",
         "playersRegistered": "4",
         "duration" : "02:00" ,
-        "datePublied": "2024-11-23 14:30:00",
-        "dateSchedule": "2024-11-29 14:30:00"
+        "datePublied": "2024-12-23 14:30:00",
+        "dateSchedule": "2024-12-29 14:30:00"
     },
     {
-        "id": 8,
+        "id": 10,
         "seeker": "lucas_33",
         "description": "Bonjour, un joueur pour compléter un double de badminton ce soir.",
         "acceptedLevels": [
@@ -116,11 +146,11 @@
         "playersMax": "4",
         "playersRegistered": "3",
         "duration" : "02:00" ,
-        "datePublied": "2024-11-25 14:30:00",
-        "dateSchedule": "2024-11-28 14:30:00"
+        "datePublied": "2024-12-25 14:30:00",
+        "dateSchedule": "2024-12-28 14:30:00"
     },
     {
-        "id": 9,
+        "id": 11,
         "seeker": "emma_p",
         "description": "Besoin d'un joueur pour du tennis de table, demain soir.",
         "acceptedLevels": [
@@ -131,11 +161,11 @@
         "playersMax": "2",
         "playersRegistered": "1",
         "duration" : "02:00" ,
-        "datePublied": "2024-11-26 14:30:00",
-        "dateSchedule": "2024-11-27 14:30:00"
+        "datePublied": "2024-12-26 14:30:00",
+        "dateSchedule": "2024-12-27 14:30:00"
     },
     {
-        "id": 10,
+        "id": 12,
         "seeker": "charles_k",
         "description": "Salut, besoin de trois joueurs pour du basket-ball ce samedi après-midi.",
         "acceptedLevels": [
@@ -146,11 +176,11 @@
         "playersMax": "5",
         "playersRegistered": "2",
         "duration" : "02:00" ,
-        "datePublied": "2024-11-24 14:30:00",
-        "dateSchedule": "2024-11-30 14:30:00"
+        "datePublied": "2024-12-24 14:30:00",
+        "dateSchedule": "2024-12-30 14:30:00"
     },
     {
-        "id": 11,
+        "id": 13,
         "seeker": "finnstark",
         "description": "Hello, deux joueurs pour un double en padel demain soir. Niveau 2 minimum.",
         "acceptedLevels": [
@@ -161,11 +191,11 @@
         "playersMax": "4",
         "playersRegistered": "2",
         "duration" : "02:00" ,
-        "datePublied": "2024-11-25 14:30:00",
-        "dateSchedule": "2024-11-28 14:30:00"
+        "datePublied": "2024-12-25 14:30:00",
+        "dateSchedule": "2024-12-28 14:30:00"
     },
     {
-        "id": 12,
+        "id": 14,
         "seeker": "marie_l",
         "description": "Recherche deux partenaires pour du beach volley samedi matin.",
         "acceptedLevels": [
@@ -176,7 +206,7 @@
         "playersMax": "4",
         "playersRegistered": "2",
         "duration" : "02:00" ,
-        "datePublied": "2024-11-25 14:30:00",
+        "datePublied": "2024-12-25 14:30:00",
         "dateSchedule": "2024-12-02 14:30:00"
     }
 ]

@@ -1,10 +1,11 @@
-import { PlayerFinder } from "@/models/PlayerFinder";
+import { PlayerFinder } from "@/types/interfaces/PlayerFinder";
 import { commonStyles } from "@/style/commonStyle";
 import { COLOR_PRUSSIAN_BLUE, COLOR_WHITE } from "@/utils/constantsStyle";
 import {
   capitalize,
   getPostTimeAgo,
   getScheduleDateStr,
+  isGameClosed,
 } from "@/utils/functions";
 import { useCallback, useState } from "react";
 import { View, Text, StyleSheet, Image } from "react-native";
@@ -20,7 +21,10 @@ export default function PlayerSearchItem({
   const [playersJoined, SetPlayersJoined] = useState(0);
 
   function handleJoinPress(nb: number) {
-    if (playersJoined + 1 + nb <= playerFinder.playersMax) {
+    if (
+      playersJoined + nb + Number(playerFinder.playersRegistered) <=
+      playerFinder.playersMax
+    ) {
       SetPlayersJoined(playersJoined + nb);
     }
   }
@@ -57,6 +61,8 @@ export default function PlayerSearchItem({
         <JoinGameButton
           nbPlayersJoined={playersJoined}
           handleJoinPress={handleJoinPress}
+          isFull={playerFinder.playersRegistered == playerFinder.playersMax}
+          isClosed={isGameClosed(playerFinder.dateSchedule.toString())}
         />
         <View style={[styles.container, { alignItems: "center" }]}>
           <Image
@@ -64,7 +70,8 @@ export default function PlayerSearchItem({
             style={styles.icon}
           />
           <Text style={commonStyles.paragraph}>
-            {1 + playersJoined}/{playerFinder.playersMax}
+            {Number(playersJoined) + Number(playerFinder.playersRegistered)}/
+            {playerFinder.playersMax}
           </Text>
         </View>
       </View>
